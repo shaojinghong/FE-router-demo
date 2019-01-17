@@ -1,3 +1,4 @@
+import $ from 'jquery'
 import { FrontRouter } from './src/router.js'
 
 var router = new FrontRouter();
@@ -13,3 +14,14 @@ router.route('yellow', function() {
 router.route('red', function() {
   document.body.style.backgroundColor = 'red';
 });
+
+router.route('/', function() {
+  document.body.style.backgroundColor = 'white';
+});
+
+$('.back').click(function(e) {
+  router.back();
+})
+// $('.forward').click(function(e) {
+//   router.forward();
+// })
