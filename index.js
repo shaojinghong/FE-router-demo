@@ -22,6 +22,6 @@ router.route('/', function() {
 $('.back').click(function(e) {
   router.back();
 })
-// $('.forward').click(function(e) {
-//   router.forward();
-// })
+$('.forward').click(function(e) {
+  router.forward();
+})
